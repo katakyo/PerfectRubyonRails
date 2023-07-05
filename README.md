@@ -1,24 +1,24 @@
-# README
+Dockerで環境構築しました。Apple siliconを搭載したMacで動かすことを想定しています。
+前のリポジトリだとwebpack関連で動かなかったので、Rails7系で作り直しました。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### build
+```
+docker-compose build
+```
 
-Things you may want to cover:
+### コンテナの起動
+```
+docker-compose up -d
+```
 
-* Ruby version
+### DB作成
+```
+docker-compose run app rails db:create
+```
+localhostに接続
+http://localhost:3030/
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### appコンテナに入る
+```
+docker-compose exec app sh
+```
