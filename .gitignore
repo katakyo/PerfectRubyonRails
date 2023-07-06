@@ -29,3 +29,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# DS_Store is a file used by macOS to store folder attributes
+/.DS_Store
