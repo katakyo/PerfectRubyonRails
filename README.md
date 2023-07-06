@@ -22,3 +22,8 @@ http://localhost:3030/
 ```
 docker-compose exec app sh
 ```
+
+### マイグレーションを実行
+```
+rails db:migrate
+```
