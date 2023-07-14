@@ -15,9 +15,6 @@ docker-compose up -d
 ```
 docker-compose run app rails db:create
 ```
-localhostに接続
-http://localhost:3030/
-
 ### appコンテナに入る
 ```
 docker-compose exec app sh
@@ -27,3 +24,6 @@ docker-compose exec app sh
 ```
 rails db:migrate
 ```
+
+localhostに接続
+http://localhost:3030/
